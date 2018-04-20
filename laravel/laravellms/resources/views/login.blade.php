@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="your,keywords">
 		<meta name="description" content="Short explanation about this website">
+		<meta name="csrf-token" content="{{ csrf_token() }}" />
 		<!-- END META -->
 
 		<!-- BEGIN STYLESHEETS -->
@@ -70,6 +71,7 @@
 								</div>
 								<div class="form-group">
 									<input type="password" class="form-control" id="password" name="password">
+									<input type="hidden" name="_token" value="{{ csrf_token() }}">
 									@if ($errors->any())
 	                                <p class="errors">{{$errors->first('password')}}</p>
 	                                @endif

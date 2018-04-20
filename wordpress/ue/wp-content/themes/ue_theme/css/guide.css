@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*============== COMMON CSS ==============*/
+html, body { position: relative; height: 100% !important; }
+body { padding-top: 52px; }
+.header_black { background: #000; }
+.header_black .site-title { color: #fff }
+.header_black .nav-header a { color: #fff }
+.header_black .nav-header .mobile .show-menu { color: #fff }
+.swiper-container { width: 100%; }
+.swiper-slide { text-align: left; font-size: 18px; background: #fff; /* Center slide text vertically */ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.swiper-container .textcol_wrapper { text-align: left; }
+.swiper-container .main_title { font-family: "HelveticaNeueW01-97Blac"; color: #232323; font-size: 64px; text-transform: uppercase; padding-bottom: 15px; }
+.swiper-container .container-fluid { width: 100% }
+/*.swiper-container .sub_title { font-family: "Helvetica Neue 77 Std"; color: #232323; font-size: 18px; text-transform: uppercase; padding-bottom: 15px; }*/
+.swiper-container p { font-size: 16px; line-height: 24px; color: #4b4b4b }
+.swiper-container ul { padding: 0px; margin: 0px; }
+.swiper-container ul li { margin-bottom: 10px; font-size: 16px; line-height: 24px; color: #4b4b4b; list-style: none; }
+.swiper-container ul li label { vertical-align: middle; }
+.swiper-container ul li audio { width: 272px; height: 30px; vertical-align: middle; }
+.swiper-container ul li span { color: #00c2f2 }
+/*.swiper-slide { cursor: grab; cursor: -webkit-grab; cursor: -o-grab; cursor: -moz-grab }*/
+.register_product { background: url(../images/register_bg.jpg) no-repeat top left; background-size: cover }
+.register_product_content .title { font-family: "HelveticaNeueW01-97Blac"; color: #000000; font-size: 64px; text-transform: uppercase; letter-spacing: 15px; }
+.register_product_content p { font-size: 15px; color: #4b4b4b; line-height: 20px; }
+/*form.register_form { margin-top: 5px; }
+.register_form input, .register_form select { width: 100%; border: 1px solid #cccccc; height: 45px; border-radius: 30px; color: #989899; padding: 0px 17px; font-size: 14px; margin-bottom: 10px; }
+.register_form select { -webkit-appearance: none; -moz-appearance: none; position: relative; background: #fff url(../images/select_drop.png) no-repeat; background-position: 90% center; padding-right: 27px; }
+ .register_form select::-ms-expand {
+ display: none;
+}
+.register_form .row.terms { text-align: center; }
+.register_form .terms label a { color: #00c2f2; text-decoration: underline }*/
+.success_product { background: url(../images/register_bg.jpg) no-repeat top left; background-size: cover }
+.success_product_content .title { font-family: "HelveticaNeueW01-97Blac"; color: #232323; font-size: 94px; text-transform: uppercase; padding-bottom: 0px; }
+.success_product_content .sub_title { text-transform: none; font-family: "Helvetica Neue 77 Std"; color: #232323; font-size: 34px; line-height: 40px; padding-bottom: 15px; }
+.success_product_content .leave_review { padding-bottom: 25px; display: block; }
+.success_product_content .leave_review a { text-decoration: underline; font-family: 'Helvetica Neue 85 Std'; font-size: 24px; color: #00c2f2; text-transform: uppercase; display: inline-block; }
+.success_product_content .leave_review a:hover { opacity: 0.74 }
+.success_product_content .social_review a:hover { text-decoration: none }
+.success_product_content .social_review .fa { color: #fff; font-size: 18px; width: 30px !important; height: 30px; border-radius: 50%; line-height: 32px; }
+.fa-facebook { background: #3b5998 }
+.fa-twitter { background: #55acee }
+.fa-instagram { background: #6a453b }
+.success_product_content .social_review em { text-transform: none; font-size: 14px; color: #000; font-style: normal; opacity: 0.74; padding-left: 7px; }
+.success_product_content .fa-hover { display: inline-block; padding: 0px 10px 15px; }
+.scroll_down { padding-top: 10px; display: block; clear: both; }
+.scroll_down span { text-transform: uppercase; font-family: 'Helvetica Neue 77 Std'; color: #333333; font-size: 14px; line-height: 17px; width: 50px; word-wrap: break-word; display: inline-block; }
+.scroll_down:hover { text-decoration: none }
+.scroll_down i { display: block; height: 22px; background: url(../images/scroll_down.png) no-repeat center; width: 60px; position: relative; -webkit-animation: mymove 1s;  /* Safari 4.0 - 8.0 */ -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */ animation: mymove 1s; animation-iteration-count: infinite; margin: 0 auto }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove { from {
+top: 0px;
+}
+to { top: 20px; }
+}
+ @keyframes mymove { from {
+top: 0px;
+}
+to { top: 20px; }
+}
+#fp-nav ul li:first-child span{ background: url(../images/star.png) no-repeat; width: 18px; height: 18px; margin-left: -5px !important; margin-top:-8px }
+.register_form .col-md-12 { position: relative }
+.register_form .info_icon { cursor: pointer; position: absolute; right: 5%; top: 15px; font-size: 20px; opacity: 0.7; }
+.register_product .submit_btn { margin-top: 5px; vertical-align: top; display: inline-block; font-family: 'Helvetica Neue bold'; color: #fff; background: #00abee; text-transform: uppercase; font-size: 17px; padding: 9px 25px; border-radius: 30px; position: relative; border: 0px; }
+.register_product .submit_btn:hover > .wave1 { animation: ripple-in2 2s; -webkit-animation: ripple-in2 2s; -moz-animation: ripple-in2 2s; }
+.register_product .submit_btn .wave1 { border-radius: 30px; height: 100%; width: 100%; position: absolute; left: 0px; top: 0px; }
+.checkbox-custom { opacity: 0; position: absolute; }
+.checkbox-custom, .checkbox-custom-label { display: inline-block; vertical-align: middle; margin: 5px; cursor: pointer; }
+.checkbox-custom-label { position: relative; }
+.checkbox-custom + .checkbox-custom-label:before { content: ''; background: #fff; border: 1px solid #777775; display: inline-block; vertical-align: middle; width: 20px; height: 20px; padding: 2px; margin-right: 10px; text-align: center; }
+.checkbox-custom:checked + .checkbox-custom-label:before { background: #00c2f2; }
+.register_form .terms label { display: inline-block; color: #777777; font-family: 'Helvetica Neue light'; font-size: 15px; width: 87%; vertical-align: top; }
+.popover { max-width: 550px !important }
+.popover .popover-content { padding: 0px !important }
+
+.register_product .swiper-slide, .success_product .swiper-slide{ background:transparent;}
