@@ -22,3 +22,24 @@ Route::resource('companies', 'CompaniesController');
 Route::resource('employees', 'EmployeesController');
 
 Route::get('user','UserController@index');
+
+//------------------------------------------------
+
+Route::prefix('admin')->group(function () {
+
+	Route::get('dashboard','AdminController@dashboard');
+
+	Route::get('/','AdminController@index');
+
+	Route::get('/login','LoginController@index');
+
+});
+
+
+//Route::get('admin','AdminController@index');
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
