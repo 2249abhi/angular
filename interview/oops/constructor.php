@@ -1,7 +1,7 @@
 <?php
 class BaseClass {
     function __construct() {
-        print "In BaseClass constructor<br>";
+        echo "In BaseClass constructor<br>";
     }
 }
 

@@ -11,7 +11,8 @@ class UserController extends Controller
 {
     public function index()
     {
-    	$user = User::find(2)->profile->telephone;
+    	$user = User::find(1)->profile->telephone;
+
 
     	echo "Phone test:".$user;
 

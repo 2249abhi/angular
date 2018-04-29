@@ -15,21 +15,22 @@ class User extends Model
      *
      * @var array
      */
-   /* protected $fillable = [
+    protected $fillable = [
         'name', 'email', 'password',
-    ];*/
+    ];
 
     /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
      */
-    /*protected $hidden = [
+    protected $hidden = [
         'password', 'remember_token',
-    ];*/
+    ];
 
     public function profile()
     {
-        return $this->hasOne('App\Profile');
+        //return $this->hasOne('App\Phone', 'foreign_key', 'local_key');
+        return $this->hasOne('App\Profile','user_id','id');
     }
 }

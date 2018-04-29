@@ -41,7 +41,7 @@ class Childs extends Parents
 {
 	function __construct()
 	{
-		return "Child Class Constructor</br>";
+		return Parent::__construct(). " and Child Class Constructor.</br>";
 	}
 
 	public function firstname()

@@ -3,9 +3,9 @@
 $val = "abhishek"; 
  $len = strlen($val);
 
- for($i=$len;$i>=0;$i--)
+ /*for($i=$len;$i>=0;$i--)
  {
  	echo $val[$i];
- }
+ }*/
 
- //echo $val[3];// print 3rd character of string
+ echo $val[3];// print 4rd character of string
