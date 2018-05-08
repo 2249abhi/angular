@@ -164,6 +164,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
+
         /*
          * Package Service Providers...
          */

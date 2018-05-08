@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;
 
@@ -21,6 +23,11 @@ class ProfileController extends Controller
     	return view('profile', compact('user'));
     }
 
+
+    public function profileajax()
+    {
+            return Request::json()->all();
+    }
     public function update(Request $request)
     {
     	

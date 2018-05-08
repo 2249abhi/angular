@@ -14,7 +14,7 @@
                       </div>
                   @endif
                     <div class="alert alert-success" style="display:none">Post Created Successfully.</div>
-                    <form class="form-horizontal" name="postform" id="postform" method="post" enctype="multipart/form-data"  role="form">
+                    <form class="form-horizontal" name="postform" id="postform" method="post"  enctype="multipart/form-data"  role="form">
                       @include('postform')
                     </form>
                 </div>

@@ -21,14 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::post('/profile', 'ProfileController@update');
+Route::post('/profileajax', 'ProfileController@profileajax');
 
 
 Route::resource('post', 'PostController');
 Route::get('myposts', 'PostController@myposts');
 
 Route::get('ajaxtest', 'PostController@ajaxtest');
-Route::post('ajaxtest', 'PostController@ajaxtest');
-
-
 /*Route::get('/post/create', 'PostController@create');
 Route::post('/post/create', 'PostController@create');*/

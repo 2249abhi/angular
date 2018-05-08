@@ -14,7 +14,7 @@
                           {{ session('status') }}
                       </div>
                   @endif
-                    <form class="form-horizontal" name="profile" method="post" enctype="multipart/form-data" action="{{url('/profile')}}" role="form">
+                    <form class="form-horizontal" name="profile" id="profile" method="post" enctype="multipart/form-data"  role="form">
                       <!-- <div class="form-group">
                         <label class="col-lg-3 control-label">First name:</label>
                         <div class="col-lg-8">
@@ -74,7 +74,6 @@
                           @if ($errors->any())
                             <p class="errors">{{$errors->first('phone')}}</p>
                           @endif
-                          {{ csrf_field() }}
                         </div>
                       </div>
                       <div class="form-group">
