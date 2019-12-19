@@ -1,4 +1,8 @@
 <?php
+/*
+Laravel traits are a group of functions that you include within another class. 
+A trait is like an abstract class.
+*/
 trait  custom
 {
      public function hello()
