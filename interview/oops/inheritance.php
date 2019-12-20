@@ -10,6 +10,10 @@ interface Info
 }
 
 
+/*
+Inheretence is the process in which object one class acquire the property of object of another class.
+*/
+
 //inheritance
 class Parents implements Info
 {
