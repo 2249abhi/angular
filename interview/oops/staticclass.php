@@ -1,7 +1,11 @@
 <?php
+/*
+ A static class in PHP is a type of class which is instantiated only once in a program. 
+ It must contain a static member (variable) or a static member function (method) or both. 
+ The variables and methods are accessed without the creation of an object, 
+ using the scope resolution operator(::)
+*/
 
-//The instanced class may have many instances, the static one has only one "instance".
-//Note that instanced classes may have static properties and methods shared by all instances and accessible by the :: operator
 class StaticHello {
   static protected $sProperty = 'static';
   static public function sayHello()
